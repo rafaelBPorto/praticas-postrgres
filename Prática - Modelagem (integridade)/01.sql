@@ -17,7 +17,7 @@ CREATE TABLE "customerPhones"(
 
 CREATE TABLE "customerAddresses"(
 	"id" SERIAL PRIMARY KEY,
-	"customerId" INTEGER NOT NULL,
+	"customerId" INTEGER NOT NULL UNIQUE,
 	"street" TEXT NOT NULL,
 	"number" TEXT NOT NULL,
 	"complement" TEXT NOT NULL,
