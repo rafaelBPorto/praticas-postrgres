@@ -6,7 +6,7 @@ CREATE TABLE "customers"(
 	"password" TEXT NOT NULL
 );
 
-CREATE TYPE "type-phone" AS ENUM ('sad', 'ok', 'happy');
+CREATE TYPE "type-phone" AS ENUM ('landline', 'mobile');
 
 CREATE TABLE "customerPhones"(
 	"id" SERIAL PRIMARY KEY,
